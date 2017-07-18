@@ -1,4 +1,4 @@
-package hello
+package cnms.hello
 
 /**
  * Created by popsicle on 7/18/17.

@@ -1,4 +1,4 @@
-package hello;
+package cnms.hello;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -25,16 +25,12 @@ repositories {
 }
 
 dependencies {
-    // tag::jetty[]
-    compile("org.springframework.boot:spring-boot-starter-web") {
-        exclude module: "spring-boot-starter-tomcat"
-    }
-    compile("org.springframework.boot:spring-boot-starter-jetty")
-    // end::jetty[]
-    // tag::actuator[]
-    compile("org.springframework.boot:spring-boot-starter-actuator")
-    // end::actuator[]
 
+    compile "org.springframework.boot:spring-boot-devtools"
+    compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:spring-boot-starter-data-jpa"
+    compile "org.postgresql:postgresql:9.4.1212"
+    compile "org.springframework.boot:spring-boot-starter-actuator"
     compile "org.jetbrains.kotlin:kotlin-stdlib"
 
     testCompile("junit:junit")
