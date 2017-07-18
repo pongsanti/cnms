@@ -1,4 +1,7 @@
 spring:
+  data.rest:
+    basePath: /api
+
   datasource:
     url: jdbc:postgresql://localhost:5432/cnms_dev
     username: dev
