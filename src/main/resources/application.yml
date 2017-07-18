@@ -7,6 +7,8 @@ spring:
     username: dev
     password: dev
     driver-class-name: org.postgresql.Driver
+    data: classpath:/db/data.sql
+    #initialize: false
 
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
