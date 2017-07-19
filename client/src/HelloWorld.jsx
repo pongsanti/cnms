@@ -1,15 +1,17 @@
-import React from 'react'
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
-import {addTodo} from './actions/todo'
+// @flow
+
+import React from 'react';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { addTodo } from './actions/todo';
 
 const HelloWorld = () => {
-  const action = addTodo('hello')
+  const action = addTodo('2');
   return (
     <div>
-      <Navbar className='header-nav-primary'>
+      <Navbar className="header-nav-primary">
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#" className='header-nav-logo'>CNMS</a>
+            <a href="#" className="header-nav-logo">CNMS</a>
           </Navbar.Brand>
         </Navbar.Header>
         <Nav>
@@ -27,7 +29,7 @@ const HelloWorld = () => {
       <h1>{action.type}</h1>
       <h1>{action.text}</h1>
     </div>
-  )
-}
+  );
+};
 
-export default HelloWorld
+export default HelloWorld;

@@ -8,3 +8,4 @@ build
 .vscode
 *.iml
 node_modules
+dist
